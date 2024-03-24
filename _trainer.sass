@@ -3,7 +3,7 @@
     h1
         font-weight: 700
         font-size: 36px
-        margin: 15px 0 0 
+        margin: 15px 0 0
     h3, h4
         color: #808080
         margin: 20px 0
@@ -34,3 +34,24 @@
                         color: #000000
     .wid
         width: 580px
+    @media screen and ( max-width: 992px )
+        .textbox
+            h3,h4
+                font-size: 18px
+            h4
+                margin: 10px 0
+                line-height: 1.2
+    @media screen and ( max-width: 768px  )
+
+        .box
+            display: flex
+            flex-direction: column
+            align-items: center
+            .imgbox
+                max-width: 400px
+            .textbox
+                margin:0 0 15px
+                text-align: center
+                width: 300px
+                ul
+                    justify-content: center

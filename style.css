@@ -30,22 +30,42 @@ body {
   width: 500px;
   height: 600px;
 }
+@media screen and (max-width: 992px) {
+  #carefor .imgbox {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  #carefor .textbox {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #carefor .textbox h1 {
+    font-size: 40px;
+  }
+  #carefor .imgbox {
+    width: 400px;
+    height: 500px;
+  }
+}
 
 #welcome {
   padding: 40px 0;
 }
-#welcome .textbox {
-  padding: 80px;
-}
-#welcome .textbox h1 {
+#welcome h1 {
   font-size: 36px;
   font-weight: 700;
   margin: 15px 0 0;
 }
-#welcome .textbox h3 {
+#welcome h3 {
   color: #808080;
   margin: 20px 0 40px;
   font-size: 18px;
+}
+#welcome .textbox {
+  padding: 80px;
+  text-align: end;
 }
 #welcome .textbox .btn {
   padding: 10px 30px;
@@ -63,15 +83,55 @@ body {
 #welcome .textbox h6 {
   font-size: 18px;
 }
+#welcome .left {
+  text-align: start;
+}
 #welcome .wid {
   width: 580px;
   padding: 0;
+}
+@media screen and (max-width: 1200px) {
+  #welcome .textbox {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  #welcome h1 {
+    font-size: 24px;
+  }
+  #welcome h3 {
+    font-size: 16px;
+    margin: 10px 0 30px;
+  }
+  #welcome .textbox {
+    margin: 20px 0;
+  }
+  #welcome .textbox .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #welcome .textbox {
+    text-align: center;
+    max-width: 400px;
+  }
+  #welcome .imgbox {
+    width: 250px;
+  }
+  #welcome .reverse {
+    order: 1;
+  }
+  #welcome .center {
+    justify-content: center;
+  }
 }
 
 #about {
   padding: 40px 0;
 }
 #about .textbox {
+  text-align: start;
   padding: 0 100px;
 }
 #about .textbox h1 {
@@ -108,6 +168,51 @@ body {
 }
 #about .imgbox {
   width: 450px;
+}
+@media screen and (max-width: 1200px) {
+  #about .textbox {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #about .textbox {
+    padding: 0 25px;
+  }
+  #about .textbox h1 {
+    font-size: 24px;
+    margin: 10px 0 0;
+  }
+  #about .textbox h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  #about .textbox p {
+    margin: 0 0 20px;
+    color: #6c757d;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  #about .textbox li {
+    padding: 10px 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about .textbox {
+    text-align: center;
+  }
+  #about .textbox li {
+    min-width: 300px;
+  }
+  #about .textbox ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 15px;
+  }
+  #about .imgbox {
+    width: 350px;
+  }
 }
 
 #trainer {
@@ -156,12 +261,39 @@ body {
 #trainer .wid {
   width: 580px;
 }
+@media screen and (max-width: 992px) {
+  #trainer .textbox h3, #trainer .textbox h4 {
+    font-size: 18px;
+  }
+  #trainer .textbox h4 {
+    margin: 10px 0;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 768px) {
+  #trainer .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #trainer .box .imgbox {
+    max-width: 400px;
+  }
+  #trainer .box .textbox {
+    margin: 0 0 15px;
+    text-align: center;
+    width: 300px;
+  }
+  #trainer .box .textbox ul {
+    justify-content: center;
+  }
+}
 
 #table {
   padding: 40px 0;
 }
 #table .textbox {
-  width: 580px;
+  max-width: 580px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -216,6 +348,32 @@ body {
 #table .premiumbox .btn {
   background-color: #A2C0BE;
 }
+@media screen and (max-width: 992px) {
+  #table .textbox h1 {
+    font-size: 32px;
+  }
+  #table .textbox h3 {
+    font-size: 18px;
+  }
+  #table .box {
+    padding: 45px 25px;
+  }
+  #table .box h2 {
+    font-size: 22px;
+  }
+  #table .box h4 {
+    font-size: 36px;
+    margin: 15px 0;
+  }
+  #table .box .btn {
+    margin: 20px 0 0;
+    padding: 8px 20px;
+    border-radius: 24px;
+  }
+  #table .mrg {
+    margin-bottom: 25px;
+  }
+}
 
 #question {
   padding: 40px 0;
@@ -263,6 +421,46 @@ body {
 #question .wid {
   width: 580px;
 }
+@media screen and (max-width: 992px) {
+  #question h1 {
+    font-size: 32px;
+  }
+  #question h3 {
+    margin: 0 0 32px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  #question .textbox {
+    padding: 0 30px;
+  }
+  #question .textbox .minibox {
+    margin: 0;
+  }
+  #question .textbox .minibox li {
+    margin: 0;
+  }
+  #question .textbox .minibox li h2 {
+    font-size: 18px;
+  }
+  #question .textbox p {
+    line-height: 1.4;
+  }
+  #question .textbox h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #question h1 {
+    font-size: 28px;
+  }
+  #question .textbox {
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  #question .imgbox {
+    width: 350px;
+  }
+}
 
 #blog {
   padding: 40px 0;
@@ -304,6 +502,36 @@ body {
 #blog .wid {
   width: 580px;
 }
+@media screen and (max-width: 992px) {
+  #blog h1 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  #blog h3 {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  #blog .textbox h2 {
+    font-size: 20px;
+  }
+  #blog .textbox h4 {
+    margin: 12px 0;
+  }
+  #blog .textbox p {
+    line-height: 1.3;
+    font-size: 16px;
+  }
+  #blog .textbox h5 {
+    margin: 12px 0;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #blog .mrg {
+    margin-bottom: 20px;
+  }
+}
 
 #service {
   padding: 40px 0;
@@ -342,4 +570,40 @@ body {
 }
 #service .wid {
   width: 580px;
+}
+@media screen and (max-width: 992px) {
+  #service h1 {
+    font-size: 28px;
+    margin: 8px 0;
+  }
+  #service h3 {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  #service .icon {
+    width: 80px;
+  }
+  #service .icon i {
+    font-size: 80px;
+  }
+  #service .box h2 {
+    font-size: 19px;
+  }
+  #service .box p {
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 12px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #service .box {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #service .box .textbox {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
