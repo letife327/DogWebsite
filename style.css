@@ -15,6 +15,7 @@ body {
 #carefor {
   padding: 40px 0;
   background-color: #F8F9FA;
+  background-color: red;
 }
 #carefor .textbox h1 {
   font-weight: 700;
@@ -27,7 +28,7 @@ body {
   font-weight: 200;
 }
 #carefor .imgbox {
-  width: 500px;
+  max-width: 500px;
   height: 600px;
 }
 @media screen and (max-width: 992px) {
@@ -45,7 +46,7 @@ body {
     font-size: 40px;
   }
   #carefor .imgbox {
-    width: 400px;
+    max-width: 400px;
     height: 500px;
   }
 }
@@ -87,7 +88,7 @@ body {
   text-align: start;
 }
 #welcome .wid {
-  width: 580px;
+  max-width: 580px;
   padding: 0;
 }
 @media screen and (max-width: 1200px) {
@@ -167,7 +168,7 @@ body {
   color: #949494;
 }
 #about .imgbox {
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (max-width: 1200px) {
   #about .textbox {
@@ -202,7 +203,7 @@ body {
     text-align: center;
   }
   #about .textbox li {
-    min-width: 300px;
+    max-width: 300px;
   }
   #about .textbox ul {
     display: flex;
@@ -211,7 +212,12 @@ body {
     margin: 0 0 15px;
   }
   #about .imgbox {
-    width: 350px;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #about .textbox {
+    padding: 0;
   }
 }
 
@@ -259,7 +265,7 @@ body {
   color: #000000;
 }
 #trainer .wid {
-  width: 580px;
+  max-width: 580px;
 }
 @media screen and (max-width: 992px) {
   #trainer .textbox h3, #trainer .textbox h4 {
@@ -282,7 +288,7 @@ body {
   #trainer .box .textbox {
     margin: 0 0 15px;
     text-align: center;
-    width: 300px;
+    max-width: 300px;
   }
   #trainer .box .textbox ul {
     justify-content: center;
@@ -371,7 +377,12 @@ body {
     border-radius: 24px;
   }
   #table .mrg {
-    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #table .box {
+    padding: 25px 0;
   }
 }
 
@@ -419,7 +430,7 @@ body {
   margin: 30px 0 0 32px;
 }
 #question .wid {
-  width: 580px;
+  max-width: 580px;
 }
 @media screen and (max-width: 992px) {
   #question h1 {
@@ -458,7 +469,7 @@ body {
     padding: 0;
   }
   #question .imgbox {
-    width: 350px;
+    max-width: 350px;
   }
 }
 
@@ -500,7 +511,7 @@ body {
   font-size: 18px;
 }
 #blog .wid {
-  width: 580px;
+  max-width: 580px;
 }
 @media screen and (max-width: 992px) {
   #blog h1 {
@@ -569,7 +580,7 @@ body {
   margin: 16px 0;
 }
 #service .wid {
-  width: 580px;
+  max-width: 580px;
 }
 @media screen and (max-width: 992px) {
   #service h1 {
