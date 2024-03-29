@@ -218,6 +218,14 @@ body {
   #about .textbox {
     padding: 0;
   }
+  #about .textbox ul {
+    align-items: flex-start;
+    padding: 0;
+    margin-right: 8px;
+  }
+  #about .textbox ul h5 {
+    font-size: 16px;
+  }
 }
 
 #trainer {
