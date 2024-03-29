@@ -15,7 +15,6 @@ body {
 #carefor {
   padding: 40px 0;
   background-color: #F8F9FA;
-  background-color: red;
 }
 #carefor .textbox h1 {
   font-weight: 700;
@@ -223,6 +222,7 @@ body {
 
 #trainer {
   padding: 60px 0;
+  background-color: #A2C0BE;
 }
 #trainer h1 {
   font-weight: 700;
@@ -333,6 +333,11 @@ body {
   font-weight: 400;
   margin: 20px 0;
 }
+#table .box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 #table .box ul li {
   font-size: 18px;
   display: flex;
@@ -341,6 +346,9 @@ body {
 }
 #table .box ul li h6 {
   font-size: 16px !important;
+}
+#table .box ul li .icon {
+  margin-right: 10px;
 }
 #table .box .btn {
   margin: 30px 0 0;
@@ -383,6 +391,9 @@ body {
 @media screen and (max-width: 500px) {
   #table .box {
     padding: 25px 0;
+  }
+  #table ul {
+    padding: 0 0 15px;
   }
 }
 
