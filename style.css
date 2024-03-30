@@ -3,6 +3,9 @@ body {
   font-weight: 5000;
 }
 
+.imgbox {
+  overflow: hidden;
+}
 .imgbox img {
   width: 100%;
 }
@@ -47,6 +50,7 @@ body {
   #carefor .imgbox {
     max-width: 400px;
     height: 500px;
+    border-radius: 20px;
   }
 }
 
@@ -117,6 +121,7 @@ body {
     max-width: 400px;
   }
   #welcome .imgbox {
+    border-radius: 20px;
     width: 250px;
   }
   #welcome .reverse {
@@ -292,6 +297,7 @@ body {
   }
   #trainer .box .imgbox {
     max-width: 400px;
+    border-radius: 20px;
   }
   #trainer .box .textbox {
     margin: 0 0 15px;
@@ -378,6 +384,7 @@ body {
     font-size: 18px;
   }
   #table .box {
+    border-radius: 20px;
     padding: 45px 25px;
   }
   #table .box h2 {
@@ -488,6 +495,7 @@ body {
     padding: 0;
   }
   #question .imgbox {
+    border-radius: 20px;
     max-width: 350px;
   }
 }
@@ -560,6 +568,10 @@ body {
 @media screen and (max-width: 768px) {
   #blog .mrg {
     margin-bottom: 20px;
+  }
+  #blog .mrg .imgbox {
+    max-height: 80px;
+    border-radius: 20px;
   }
 }
 
