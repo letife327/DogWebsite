@@ -49,7 +49,7 @@ body {
   }
   #carefor .imgbox {
     max-width: 400px;
-    height: 500px;
+    height: auto;
     border-radius: 20px;
   }
 }
@@ -217,6 +217,7 @@ body {
   }
   #about .imgbox {
     max-width: 350px;
+    height: auto;
   }
 }
 @media screen and (max-width: 500px) {
@@ -230,6 +231,9 @@ body {
   }
   #about .textbox ul h5 {
     font-size: 16px;
+  }
+  #about .imgbox {
+    border-radius: 20px;
   }
 }
 
@@ -568,9 +572,17 @@ body {
 @media screen and (max-width: 768px) {
   #blog .mrg {
     margin-bottom: 20px;
+    flex-direction: column;
   }
   #blog .mrg .imgbox {
-    max-height: 80px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #blog .imgbox {
+    overflow: hidden;
+    max-width: 100px;
     border-radius: 20px;
   }
 }
