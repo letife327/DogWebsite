@@ -5,6 +5,7 @@ body {
 
 .imgbox {
   overflow: hidden;
+  border-radius: 20px;
 }
 .imgbox img {
   width: 100%;
@@ -31,7 +32,6 @@ body {
 }
 #carefor .imgbox {
   max-width: 500px;
-  height: 600px;
 }
 @media screen and (max-width: 992px) {
   #carefor .imgbox {
@@ -121,7 +121,6 @@ body {
     max-width: 400px;
   }
   #welcome .imgbox {
-    border-radius: 20px;
     width: 250px;
   }
   #welcome .reverse {
@@ -232,9 +231,6 @@ body {
   #about .textbox ul h5 {
     font-size: 16px;
   }
-  #about .imgbox {
-    border-radius: 20px;
-  }
 }
 
 #trainer {
@@ -301,7 +297,6 @@ body {
   }
   #trainer .box .imgbox {
     max-width: 400px;
-    border-radius: 20px;
   }
   #trainer .box .textbox {
     margin: 0 0 15px;
@@ -499,7 +494,6 @@ body {
     padding: 0;
   }
   #question .imgbox {
-    border-radius: 20px;
     max-width: 350px;
   }
 }
@@ -544,6 +538,14 @@ body {
 #blog .wid {
   max-width: 580px;
 }
+#blog .imgbox {
+  max-width: 150px;
+  margin: 0 0 20px 20px;
+}
+#blog .mrg {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 992px) {
   #blog h1 {
     font-size: 28px;
@@ -567,23 +569,6 @@ body {
   #blog .textbox h5 {
     margin: 12px 0;
     font-size: 16px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #blog .mrg {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  #blog .mrg .imgbox {
-    margin-left: 20px;
-    margin-bottom: 15px;
-  }
-}
-@media screen and (max-width: 500px) {
-  #blog .imgbox {
-    overflow: hidden;
-    max-width: 100px;
-    border-radius: 20px;
   }
 }
 
